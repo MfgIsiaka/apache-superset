@@ -80,11 +80,11 @@ describe('ExecutionLog', () => {
   });
 
   it('renders', () => {
-    expect(wrapper.find(ExecutionLog)).toExist();
+    expect(wrapper.find(ExecutionLog)).toBeTruthy();
   });
 
   it('renders a ListView', () => {
-    expect(wrapper.find(ListView)).toExist();
+    expect(wrapper.find(ListView)).toBeTruthy();
   });
 
   it('fetches report/alert', () => {

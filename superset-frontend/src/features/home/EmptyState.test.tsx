@@ -66,7 +66,7 @@ describe('EmptyState', () => {
   variants.forEach(variant => {
     it(`renders an ${variant.tab} ${variant.tableName} empty state`, () => {
       const wrapper = mount(<EmptyState {...variant} />);
-      expect(wrapper).toExist();
+      expect(wrapper).toBeTruthy();
 
       // Select the first description node
       const textContainer = wrapper.find('.ant-empty-description').at(0);
@@ -78,7 +78,7 @@ describe('EmptyState', () => {
   recents.forEach(recent => {
     it(`renders a ${recent.tab} ${recent.tableName} empty state`, () => {
       const wrapper = mount(<EmptyState {...recent} />);
-      expect(wrapper).toExist();
+      expect(wrapper).toBeTruthy();
 
       // Select the first description node
       const textContainer = wrapper.find('.ant-empty-description').at(0);
